@@ -9,7 +9,7 @@ This project deploys the [oauth2_proxy](https://github.com/bitly/oauth2_proxy) r
 - You will need to have A Kubernetes secret in the kube-system namespace. Example to create that:
 
 ```
-kubectl --namespace kube-system create secret generic oauth --from-literal=OAUTH2_PROXY_CLIENT_ID=your_client_id_from_google --from-literal=OAUTH2_PROXY_CLIENT_SECRET=your_client_secret_from_google --from-literal=OAUTH2_PROXY_COOKIE_SECRET=random_base64_encoded_value
+kubectl --namespace default create secret generic oauth --from-literal=OAUTH2_PROXY_CLIENT_ID=your_client_id_from_google --from-literal=OAUTH2_PROXY_CLIENT_SECRET=your_client_secret_from_google --from-literal=OAUTH2_PROXY_COOKIE_SECRET=random_base64_encoded_value
 ```
 
 - Edit the following line and insert your domain, such as "example.org":

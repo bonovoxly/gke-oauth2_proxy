@@ -4,7 +4,7 @@ metadata:
   labels:
     k8s-app: oauth
   name: oauth
-  namespace: kube-system
+  namespace: default
 spec:
   replicas: 2
   revisionHistoryLimit: 10
