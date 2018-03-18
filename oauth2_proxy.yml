@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: oauth
-        image: bcawthra/oauth:latest
+        image: bcawthra/oauth2_proxy:latest
         args:
         - --email-domain=<YOUREMAILDOMANHERE>
         - --upstream=file:///dev/null

@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: oauth
-        image: bcawthra/oauth:2017-12-17
+        image: bcawthra/oauth2_proxy:latest
         args:
         - --upstream=file:///dev/null
         - --authenticated-emails-file=/opt/auth/emails
