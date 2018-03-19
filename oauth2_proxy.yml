@@ -44,13 +44,6 @@ spec:
         ports:
         - containerPort: 4180
           protocol: TCP
-        volumeMounts:
-        - name: emails
-          mountPath: /opt/auth
-      volumes:
-      - name: emails
-        secret:
-          secretName: emails
 ---
 kind: Service
 apiVersion: v1

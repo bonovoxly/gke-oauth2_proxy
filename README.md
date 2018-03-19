@@ -32,3 +32,6 @@ You can verify the status by running:
 kubectl -n kube-system get pods
 ```
 
+# Using an email auth file
+
+If using the email auth file deployment, you will need to create a volume mount that is the email auth file, containing the list of email addresses who are allowed access.
