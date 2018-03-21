@@ -51,7 +51,7 @@ metadata:
   labels:
     k8s-app: oauth 
   name: oauth
-  namespace: kube-system
+  namespace: default
 spec:
   ports:
   - name: oauth
